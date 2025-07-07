@@ -99,4 +99,4 @@ Potential improvements:
 
 ## License
 
-MIT License © 2025 [MariiaFi](https://github.com/MariiaFi)
+MIT License © 2025 https://www.linkedin.com/in/mariia-fialkovska-78857b234/
