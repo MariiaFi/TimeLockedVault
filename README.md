@@ -99,4 +99,8 @@ Potential improvements:
 
 ## License
 
+<<<<<<< HEAD
 MIT License © 2025 https://www.linkedin.com/in/mariia-fialkovska-78857b234/
+=======
+MIT License © 2025 https://www.linkedin.com/in/mariia-fialkovska-78857b234/
+>>>>>>> 591ce8319063e11515c502a05bb0295d708135ac
