@@ -1,0 +1,162 @@
+body {
+  font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.container {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+  padding: 30px;
+  width: 100%;
+  max-width: 500px;
+  animation: fadeIn 0.6s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+h1 {
+  font-size: 26px;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 20px;
+  margin-top: 30px;
+  color: #34495e;
+  text-align: center;
+}
+
+button {
+  background: linear-gradient(135deg, #6366f1, #4338ca);
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: block;
+  margin: 12px auto;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 220px;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+button::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(99, 102, 241, 0.4) 0%, transparent 60%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 0;
+}
+
+/* Пульсация */
+button:hover::before {
+  opacity: 1;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.2;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+}
+
+button:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+/* Нажатие */
+button:active {
+  transform: scale(0.98);
+}
+
+input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin: 8px 0;
+  width: 100%;
+  font-size: 15px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #6366f1;
+  outline: none;
+}
+
+.input-row {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+#account {
+  background: #eef2ff;
+  color: #3730a3;
+  padding: 12px;
+  border-radius: 6px;
+  margin-top: 15px;
+  font-weight: 500;
+  text-align: center;
+}
+
+ul#depositsList {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+ul#depositsList li {
+  background: #f9fafb;
+  margin-bottom: 6px;
+  padding: 10px;
+  border-radius: 4px;
+  font-family: monospace;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+ul#depositsList li:hover {
+  background: #eef2ff;
+}

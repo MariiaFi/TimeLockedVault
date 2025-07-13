@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TimeLockedVault</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <h1>TimeLockedVault</h1>
+      <button id="connectWallet">Connect Wallet</button>
+      <div id="account">Not connected</div>
+
+      <h2>Deposit ETH</h2>
+      <div class="input-row">
+        <input id="amountInput" type="number" placeholder="Amount in ETH" step="0.01" />
+        <input id="lockInput" type="number" placeholder="Lock duration (sec)" />
+      </div>
+      <button id="depositButton">Deposit</button>
+
+      <h2>Your Deposits</h2>
+      <button id="loadDepositsButton">Load Deposits</button>
+      <ul id="depositsList"></ul>
+
+      <h2>Withdraw</h2>
+      <div class="input-row">
+        <input id="withdrawInput" type="number" placeholder="Deposit index" />
+      </div>
+      <button id="withdrawButton">Withdraw</button>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/ethers/dist/ethers.min.js"></script>
+  <script src="vaultAbi.js"></script>
+  <script src="app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+
+</body>
+</html>
