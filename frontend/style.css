@@ -77,7 +77,6 @@ button::before {
   z-index: 0;
 }
 
-/* Пульсация */
 button:hover::before {
   opacity: 1;
   animation: pulse 1.5s infinite;
@@ -103,7 +102,6 @@ button:hover {
   box-shadow: 0 6px 16px rgba(0,0,0,0.15);
 }
 
-/* Нажатие */
 button:active {
   transform: scale(0.98);
 }
